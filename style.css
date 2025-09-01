@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 360px;
+
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 45px;
+  margin-right: 8px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #DEE4ED;
+  padding: 30px;
+  text-align: left; /* melhor alinhamento para labels */
+  .entrar-icon {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+.card p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #B9B9B9;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+.google-btn:hover {
+  background: #f0f0f0;
+}
+
+.google-btn img {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider:not(:empty)::before {
+  margin-right: .75em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: .75em;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  
+}
+
+input:focus {
+    outline: none;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 15px 0 15px 0;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #3b5bfd;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #2f47d4;
+}
+
+.signup {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #444;
+}
+
+.signup a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 10px;
+  }
+  .card {
+    padding: 20px 30px;
+  }
+}

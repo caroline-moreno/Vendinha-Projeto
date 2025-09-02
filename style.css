@@ -39,7 +39,7 @@ body {
   border-radius: 8px;
   border: 1px solid #DEE4ED;
   padding: 30px;
-  text-align: left; /* melhor alinhamento para labels */
+  text-align: left; 
   .entrar-icon {
     display: flex;
     align-items: center;
